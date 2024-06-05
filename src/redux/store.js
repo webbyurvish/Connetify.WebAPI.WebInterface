@@ -3,8 +3,10 @@ import {
   useDispatch as useAppDispatch,
   useSelector as useAppSelector,
 } from "react-redux"; // react binding for redux
-import { persistStore, persistReducer } from "redux-persist"; //persist data (prevent lose data)
+// import { persistStore, persistReducer } from "redux-persist"; //persist data (prevent lose data)
 import { rootPersistConfig, rootReducer } from "./rootReducer";
+
+import { persistStore, persistReducer } from "redux-persist";
 
 // create store
 const store = configureStore({
